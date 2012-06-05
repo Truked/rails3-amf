@@ -44,7 +44,7 @@ end
 # Make ActiveSupport times serialize properly
 class ActiveSupport::TimeWithZone
   def encode_amf serializer
-    serializer.serialize self.to_datetime
+    serializer.serialize 3, self.to_datetime
   end
 end
 
